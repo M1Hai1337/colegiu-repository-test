@@ -2,15 +2,145 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Titlu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Git & GitHub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Hello World</h1>
-
 
 <header>
-    gfgfgfhgfgh
+    <span class="git-icon">&#128187;</span>
+    <h1>Learn Git &amp; GitHub</h1>
+    <p>A hands-on guide with essential commands and practice tasks for beginners.</p>
 </header>
-<p>Ioncu Ioan</p>
+
+<main>
+
+    <!-- ========== COMMANDS ========== -->
+    <h2 class="section-title">Essential Git Commands</h2>
+
+    <div class="commands-grid">
+        <div class="command-card">
+            <h3>Clone a repository</h3>
+            <code>git clone &lt;url&gt;</code>
+            <p>Download a remote repository to your computer so you can work on it locally.</p>
+        </div>
+        <div class="command-card">
+            <h3>Check status</h3>
+            <code>git status</code>
+            <p>See which files have been changed, added, or are ready to be committed.</p>
+        </div>
+        <div class="command-card">
+            <h3>Stage changes</h3>
+            <code>git add .</code>
+            <p>Add all modified files to the staging area, preparing them for a commit.</p>
+        </div>
+        <div class="command-card">
+            <h3>Commit changes</h3>
+            <code>git commit -m "message"</code>
+            <p>Save a snapshot of your staged changes with a descriptive message.</p>
+        </div>
+        <div class="command-card">
+            <h3>Push to remote</h3>
+            <code>git push</code>
+            <p>Upload your local commits to the remote repository on GitHub.</p>
+        </div>
+        <div class="command-card">
+            <h3>Pull updates</h3>
+            <code>git pull</code>
+            <p>Download and merge the latest changes from the remote repository.</p>
+        </div>
+        <div class="command-card">
+            <h3>Create a branch</h3>
+            <code>git checkout -b &lt;name&gt;</code>
+            <p>Create a new branch and switch to it. Useful for working on features separately.</p>
+        </div>
+        <div class="command-card">
+            <h3>Switch branch</h3>
+            <code>git checkout &lt;name&gt;</code>
+            <p>Switch to an existing branch to continue working on it.</p>
+        </div>
+        <div class="command-card">
+            <h3>View history</h3>
+            <code>git log --oneline</code>
+            <p>Show a compact list of all previous commits in the current branch.</p>
+        </div>
+    </div>
+
+    <!-- ========== WORKFLOW ========== -->
+    <h2 class="section-title">Typical Workflow</h2>
+
+    <div class="workflow">
+        <h3>How to save and upload your changes:</h3>
+        <div class="workflow-steps">
+            <div class="workflow-step">git add .</div>
+            <span class="workflow-arrow">&rarr;</span>
+            <div class="workflow-step">git commit -m "msg"</div>
+            <span class="workflow-arrow">&rarr;</span>
+            <div class="workflow-step">git push</div>
+        </div>
+    </div>
+
+    <div class="tip">
+        <strong>Tip:</strong> Always run <code>git pull</code> before you start working to make sure you have the latest
+        version of the project!
+    </div>
+
+    <!-- ========== TASKS ========== -->
+    <h2 class="section-title">Student Tasks</h2>
+
+    <ol class="tasks-list">
+        <li>
+            <strong>Task 1 &mdash; Clone the repository</strong>
+            <span>Open your terminal and run <code>git clone &lt;repo-url&gt;</code> to download this project to your computer.</span>
+        </li>
+        <li>
+            <strong>Task 2 &mdash; Create your own branch</strong>
+            <span>Create a new branch with your name: <code>git checkout -b feature/YourName</code></span>
+        </li>
+        <li>
+            <strong>Task 3 &mdash; Add yourself to the students list</strong>
+            <span>Open <code>index.html</code>, scroll to the "Students" section, and add a new card with your name inside the <code>student-grid</code> div.</span>
+        </li>
+        <li>
+            <strong>Task 4 &mdash; Stage &amp; commit your changes</strong>
+            <span>Run <code>git add .</code> then <code>git commit -m "Add YourName"</code> to save your work.</span>
+        </li>
+        <li>
+            <strong>Task 5 &mdash; Push your branch to GitHub</strong>
+            <span>Upload your branch: <code>git push -u origin feature/YourName</code></span>
+        </li>
+        <li>
+            <strong>Task 6 &mdash; Create a Pull Request</strong>
+            <span>Go to the repository on GitHub, click <strong>"Compare &amp; pull request"</strong>, add a description, and submit it.</span>
+        </li>
+        <li>
+            <strong>Task 7 &mdash; Review a classmate's Pull Request</strong>
+            <span>Open a classmate's PR on GitHub, read their changes, and leave a comment or approve it.</span>
+        </li>
+    </ol>
+
+    <!-- ========== STUDENTS ========== -->
+    <div class="students-section">
+        <h2 class="section-title">Students</h2>
+        <p class="students-hint">Add your card here! Copy one of the cards below and change the name and initial.</p>
+
+        <div class="student-grid">
+            <!-- EXAMPLE CARD — copy this and change the name -->
+            <div class="student-card">
+                <div class="student-avatar">I</div>
+                <p>Ioncu Ioan</p>
+            </div>
+            <!-- ADD YOUR CARD BELOW THIS LINE -->
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    Made with &hearts; for learning Git &amp; GitHub
+</footer>
+
 </body>
 </html>
