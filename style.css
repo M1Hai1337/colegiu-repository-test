@@ -249,6 +249,14 @@ main {
 .student-card:hover {
     border-color: #7ee787;
 }
+.student-card-c {
+    background: #FCF8F8;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    transition: border-color 0.2s;
+}
 
 .student-avatar {
     width: 48px;
@@ -263,10 +271,33 @@ main {
     color: #58a6ff;
     font-weight: 700;
 }
+.student-avatar-c{
+    width: 48px;
+    height: 48px;
+    background: #FDC3A1;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #ff587f;
+    font-weight: 700;
+}
+.student-card-c:hover{
+    border-color: #ff587f;
+    border-width: 2px;
 
+}
 .student-card p {
     color: #f0f6fc;
     font-weight: 600;
+}
+
+p.txt{
+    color:#F57799;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* --- Footer --- */
